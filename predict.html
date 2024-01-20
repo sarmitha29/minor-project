@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovarian Cancer Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ovarian Cancer Prediction</h1>
+
+    <form>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="menopause">menopause:</label>
+        <input type="text" id="menopause" name="menopause" placeholder="Enter menopause" required>
+
+        <label for="ALB">ALB:</label>
+        <input type="text" id="ALB" name="ALB" placeholder="Enter ALB" required>
+
+        <label for="CA125">CA125:</label>
+        <input type="text" id="CA125" name="CA125" placeholder="Enter CA125" required>
+
+        <label for="NEU">NEU :</label>
+        <input type="text" id="NEU" name="NEU" placeholder="Enter NEU" required>
+
+        <label for="HE4">HE4:</label>
+        <input type="text" id="HE4" name="HE4" placeholder="Enter HE4" required>
+
+        <label for="LYM">LYM:</label>
+        <input type="text" id="LYM" name="LYM" placeholder="Enter LYM" required>
+
+        <label for="PLT">PLT:</label>
+        <input type="text" id="PLT" name="PLT" placeholder="Enter PLT" required>
+
+        <label for="PCT">PCT :</label>
+        <input type="text" id="PCT" name="PCT" placeholder="Enter PCT" required>
+
+        <label for="CEA">CEA:</label>
+        <input type="text" id="CEA" name="ALB" placeholder="Enter CEA" required>
+
+        <label for="CA19-9">CA19-9:</label>
+        <input type="text" id="CA19-9" name="CA19-9" placeholder="Enter CA19-9" required>
+
+
+        <button type="button" onclick="predictCancer()">Predict Cancer</button>
+    </form>
+
+    <script>
+        function predictCancer() {
+            // You would typically send the form data to a server for processing
+            // and receive the prediction result. Since we can't perform prediction here,
+            // you would need a backend with appropriate logic and models.
+
+            // This is just a placeholder to demonstrate the idea.
+            alert("Prediction: High risk");
+        }
+    </script>
+
+</body>
+</html>
